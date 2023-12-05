@@ -142,6 +142,9 @@ public:
         Node<T>* middle;
         do{
            middle =  findMiddle(start, end);
+           if (middle == nullptr) {
+               break;
+           }
            if (middle->value == aValue){
                return true
            }
